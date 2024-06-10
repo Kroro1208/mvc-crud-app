@@ -3,13 +3,13 @@
 namespace app\models;
 
 class viewsModel
-{ // 特定のビューに対するファイルパスを取得するためのメソッドを含むモデルクラスを定義
+{
     protected function obtainViewModel($view)
     {
         $allowedList = ["dashboard"];
         if (in_array($view, $allowedList)) {
-            if (is_file('./mvc-app/app/views/content/' . $view . '-view.php')) {
-                $content = './mvc-app/app/views/content/' . $view . 'view.php';
+            if (is_file('./app/views/content/' . $view . '-view.php')) {
+                $content = './app/views/content/' . $view . '-view.php';
             } else {
                 $content = '404';
             }
