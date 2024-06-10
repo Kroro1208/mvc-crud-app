@@ -5,7 +5,7 @@ date_default_timezone_set('Asia/Tokyo');
 $dbHost = "localhost";
 $dbUser = "root";
 $dbPass = "";
-$dbName = "mvc-mode-app";
+$dbName = "mvc-model-app";
 
 // MySQLi オブジェクトを作成して接続
 $conn = new mysqli($dbHost, $dbUser, $dbPass, $dbName);
