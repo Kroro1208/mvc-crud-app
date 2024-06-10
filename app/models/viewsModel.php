@@ -9,7 +9,7 @@ class viewsModel
         $allowedList = ["dashboard"];
         if (in_array($view, $allowedList)) {
             if (is_file('./mvc-app/app/views/content/' . $view . '-view.php')) {
-                $content = './mvc-app/app/views/content' . $view . 'view.php';
+                $content = './mvc-app/app/views/content/' . $view . 'view.php';
             } else {
                 $content = '404';
             }
