@@ -1,1 +1,2 @@
-<h1>Hello</h1>
+<script src="/mvc-app/app/views/js/ajax.js"></script>
+<script src="/mvc-app/app/views/js/main.js"></script>
